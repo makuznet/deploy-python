@@ -1,0 +1,6 @@
+---
+- name: copying conf file
+  hosts: web
+  roles:
+    - role: config
+      tags: config
