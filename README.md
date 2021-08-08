@@ -99,11 +99,11 @@ ansible-playbook -i terraform-do/inventory.yml playbooks/main.yml
 ```bash
 sudo apt -y install letsencrypt
 ```
-# getting an ssl certificate
+#### getting an ssl certificate
 ```bash
 sudo letsencrypt certonly --webroot -w /var/www/html -d makuznet-at-gmail-com-py.devops.rebrain.srwx.net -m makuznet@gmail.com --agree-tos
 ```
-# backing up /etc/letsencrypt
+#### backing up /etc/letsencrypt
 ```bash
 scp -r root@makuznet-at-gmail-com-py.devops.rebrain.srwx.net:/etc/letsencrypt ~/Documents/rebrain/python-deploy/
 ```
