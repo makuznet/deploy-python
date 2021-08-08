@@ -3,6 +3,7 @@
 
 ## List of commands
 ```bash
+cd terraform-do
 terraform init
 terraform plan
 terraform apply --auto-approve
@@ -92,8 +93,7 @@ ssh makuznet-at-gmail-com-py.devops.rebrain.srwx.net -l root
         apt -y install nginx letsencrypt
         sudo letsencrypt certonly --webroot -w /var/www/html -d makuznet-at-gmail-com-py.devops.rebrain.srwx.net -m makuznet@gmail.com --agree-tos
 
-ansible-playbook -i inventory.yml main.yml
-
+ansible-playbook -i terraform-do/inventory.yml playbooks/main.yml
 ```        
 ### Letsencrypt
 ```bash
